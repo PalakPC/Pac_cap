@@ -1,0 +1,13 @@
+C program to capture packets and list the number of packets sent to and received from an IP address.
+
+Install libpcap0.8-dev before compiling.
+
+Compilation can be done as follows:
+gcc pac_cap.c -o pac_cap -lpcap (lpcap is to include the header file pcap.h)
+
+The program can be run as:
+sudo ./pac_cap
+
+On execution, it would run until enter key is pressed. Then it would list the packet details.
+
+Currently, it is unable to handle command line options for time and number of packets. Also, it does not list sent and received packets separately. So, incomplete.
